@@ -32,7 +32,7 @@ class Application extends Emitter {
      */
     prefetch(count, global = false) {
         if (typeof count !== 'number') throw new TypeError('[count] must be a number.');
-        if (typeof count !== 'boolean') throw new TypeError('[global] must be a boolean.');
+        if (typeof global !== 'boolean') throw new TypeError('[global] must be a boolean.');
         this.prefetchOpts = {
             count,
             global,
